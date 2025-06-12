@@ -1,0 +1,89 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* --- Base Styles & Dark Theme --- */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #EAECEF; /* Light grey text for readability */
+}
+
+/* Main app container */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* --- Typography --- */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #FAFAFA;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* --- Streamlit Specific Components --- */
+/* Hide Streamlit's default header and footer for a cleaner look */
+#MainMenu, footer, .stDeployButton {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+/* Style the primary button */
+.stButton>button {
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-color: #4A90E2;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+
+.stButton>button:hover {
+    border-color: #357ABD;
+    background-color: #357ABD;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the KPI Metric Cards */
+[data-testid="stMetric"] {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+[data-testid="stMetric"] .stMetricLabel {
+    font-size: 1rem;
+    color: #A0AEC0; /* Lighter grey for the label */
+}
+
+[data-testid="stMetric"] .stMetricValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* Style the dataframes */
+.stDataFrame {
+    border-radius: 8px;
+    overflow: hidden;
+}

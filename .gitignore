@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Streamlit
+.streamlit/
+
+# Secrets
+.env
+
+# Data / temp
+*.csv
+*.pdf
+/tmp/

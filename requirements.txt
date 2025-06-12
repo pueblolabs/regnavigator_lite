@@ -1,0 +1,18 @@
+# Core application
+streamlit
+streamlit-extras
+python-dotenv
+
+# API and Async
+httpx[http2]
+tenacity
+google-generativeai
+
+# Data Processing and Visualization
+pandas
+pdfplumber
+plotly
+pydantic
+
+# PDF Report Generation (EASY INSTALL)
+reportlab
