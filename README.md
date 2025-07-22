@@ -52,3 +52,8 @@ With your virtual environment activated (`source .venv/bin/activate`), run the S
 
 ```bash
 streamlit run app.py
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

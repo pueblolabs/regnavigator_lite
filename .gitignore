@@ -8,6 +8,7 @@ __pycache__/
 
 # Secrets
 .env
+.DS_Store
 
 # Data / temp
 *.csv
